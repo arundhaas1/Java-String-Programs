@@ -1,0 +1,48 @@
+        //Two strings are the anagram
+        
+        // String str1="Brag" and String str2="Grab" . both have same letters but in differnt order.
+        
+package com.dhas;
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Collections;
+public  class Main {
+    public static void main(String[] args){
+        boolean isAnagram=true;
+        String name1="dhas";
+        String name2="sadh";
+
+        if(name1.length()==name2.length()){  //to check wheather both has same no of letters
+
+
+            name1=name1.toLowerCase(Locale.ROOT);     //change all to lowercase
+            name2=name2.toLowerCase(Locale.ROOT);
+
+            char[] string1 = name1.toCharArray();   //store in the array of char
+            char[] string2 = name2.toCharArray();
+
+            Arrays.sort(string1);    //sort in accending order
+            Arrays.sort(string2);
+
+            for (int i=0;i<string1.length;i++){
+                if(string1[i]!=string2[i]){  //if any not satisfies set to false and break out of loop.
+                    isAnagram=false;
+                    break;
+                }
+            }
+
+            if(isAnagram==true){
+                System.out.println("It is an anagram");
+            }else {
+                System.out.println("It is not an anagram");
+            }
+
+        }else{
+            System.out.println("It is not an anagram");
+        }
+
+    }
+}
+
+___________________________________________________________________________________________________________________________________________________________________________
