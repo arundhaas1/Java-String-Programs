@@ -1,0 +1,21 @@
+    //count the total number of punctuation characters exists in a String => (! , ; . ? - ' " :)
+    
+package com.dhas;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Collections;
+public  class Main {
+    public static void main(String[] args) throws Exception {
+        String str = "He said, 'The mailman loves you.' I heard it with my own ears.";
+        int count=0;
+
+        for (int i=0;i<str.length();i++){
+            if(str.charAt(i) == '!' || str.charAt(i) == ',' || str.charAt(i) == ';' || str.charAt(i) == '.' ||  str.charAt(i) == '?' || str.charAt(i) == '-' ||
+                    str.charAt(i) == '\'' || str.charAt(i) == '\"' || str.charAt(i) == ':'){     //'/"' is used to represent " because it cant be simply used
+                count++;
+            }
+        }
+        System.out.println("the string has "+count+" number of punchuations ");
+    }
+}
+__________________________________________________________________________________________________________________________________________________________
