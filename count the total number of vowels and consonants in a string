@@ -1,0 +1,30 @@
+      //count the total number of vowels and consonants in a string
+      
+package com.dhas;
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Collections;
+public  class Main {
+    public static void main(String[] args) throws Exception {
+        String string = "This is a really simple sentence";
+        int countvowels=0;
+        int countConsonats=0;
+
+        String str=string.toLowerCase(Locale.ROOT);
+
+        for (int i=0;i<str.length();i++){
+            if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' ||  str.charAt(i) == 'u'){
+                countvowels++;
+            }else if(str.charAt(i)==' '){  //for spaces
+
+            } else{
+                countConsonats++;
+            }
+        }
+        System.out.println("the string has "+countvowels+" number of vowel letters ");
+        System.out.println("the string has "+countConsonats+" number of consant letters ");
+    }
+}
+
+____________________________________________________________________________________________________________________________________________________________________-
