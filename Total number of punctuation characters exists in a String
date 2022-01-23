@@ -6,8 +6,10 @@ import java.util.Scanner;
 import java.util.Collections;
 public  class Main {
     public static void main(String[] args) throws Exception {
-        String str = "He said, 'The mailman loves you.' I heard it with my own ears.";
+        String string = "He said, 'The mailman loves you.' I heard it with my own ears.";
         int count=0;
+        
+        String str=string.toLowerCase(Locale.Root);
 
         for (int i=0;i<str.length();i++){
             if(str.charAt(i) == '!' || str.charAt(i) == ',' || str.charAt(i) == ';' || str.charAt(i) == '.' ||  str.charAt(i) == '?' || str.charAt(i) == '-' ||
