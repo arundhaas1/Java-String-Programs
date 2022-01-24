@@ -1,0 +1,25 @@
+        //to determine whether one string is a rotation of another
+
+package com.dhas;
+import java.util.Arrays;
+import java.util.Locale;
+
+public  class Main {
+    public static void main(String[] args) {
+        String str1 = "arun", str2 = "naru";
+
+        if(str1.length() == str2.length()){
+            str1 = str1.concat(str1);    //makes arunarun
+            if(str1.indexOf(str2) != -1) {     //it gives the index of the string in other ..it gives 1 since 'runa' is in 1st index.
+                System.out.println("Second string is a rotation of first string");
+            }else {
+                System.out.println("Second string is not a rotation of first string");
+            }
+        }
+        else {
+            System.out.println("Second string is not a rotation of first string");
+        }
+    }
+}
+
+_____________________________________________________________________________________________________________________________________________________________________
