@@ -1,0 +1,24 @@
+        //find the duplicate characters in a string
+        
+        //presence of a char more than one time
+        
+package com.dhas;
+import java.util.Arrays;
+import java.util.Locale;
+
+public  class Main {
+    public static void main(String[] args) {
+        String str1 = "a rund hasun ";
+        for (int i = 0; i < str1.length(); i++) {  //loop to take all char
+            for (int j = i+1; j < str1.length(); j++) {   //loop to take all other char for equate
+                if(str1.charAt(i)==str1.charAt(j) && str1.charAt(i) != ' '){     //( !=' ' to not print the spaces)
+                        System.out.println(str1.charAt(i));
+                }
+
+            }
+        }
+
+    }
+}
+
+______________________________________________________________________________________________________________________________________________________
